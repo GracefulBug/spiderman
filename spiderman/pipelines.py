@@ -10,7 +10,7 @@ import pymysql
 class SpidermanPipeline(object):
 
     def __init__(self):
-        self.db = pymysql.connect(host='123.56.142.9', user='root', passwd='pass', db='snh', charset='utf8',
+        self.db = pymysql.connect(host='ip', user='user', passwd='passwd', db='db', charset='utf8',
                                   port=3306)
         self.cur = self.db.cursor()
 
